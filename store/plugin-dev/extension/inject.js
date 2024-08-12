@@ -1,5 +1,5 @@
 (function(window, undefined) {
-	var URL_TO_PLUGIN = "";
+	var URL_TO_PLUGIN = "https://man2001thcs.github.io/onlyoffice.github.io/sdkjs-plugins/content/emrsign/";
 	
 	var xhrObj = new XMLHttpRequest();
 	xhrObj.open('GET', URL_TO_PLUGIN + "config.json", false);
