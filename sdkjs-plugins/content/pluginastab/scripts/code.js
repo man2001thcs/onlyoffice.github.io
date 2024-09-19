@@ -31,12 +31,12 @@
     });
 
     this.attachToolbarMenuClickEvent("insertOleObject", function (data) {
-      window.Asc.plugin.executeMethod ("GetInstalledPlugins", null, function (result) {
+      window.Asc.plugin.executeMethod("GetInstalledPlugins", null, function (result) {
           postMessage (JSON.stringify ({type: 'InstalledPlugins', data: result }));
       });
 
-      this.executeMethod("ActivateWindow", [
-        "asc.{C36DDFB5-08F0-4A68-B829-5FB1F7D49331}",
+      window.Asc.plugin.executeMethod("ActivateWindow", [
+        "iframe_asc.{C36DDFB5-08F0-4A68-B829-5FB1F7D49331}",
       ]);
     });
 
